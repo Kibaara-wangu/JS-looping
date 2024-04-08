@@ -18,27 +18,36 @@ multiply()
 
 // Write a program that takes in the following array and use a while loop to iterate and break when the item is equal to the fourth index 
 // :let arrNum = [1,2,3,4,5,6,7,8,9];
-function numbers(){
+function nums(){
 let arrNum = [1,2,3,4,5,6,7,8,9]
-arrNum.forEach(l =>{
-    while(arrNum < 4){break;}
-    console.log(arrNum);
-});
+const m = arrNum.slice(0,5)
+
+    while(m){
+        console.log(m);
+        break;
+};
 }
+nums()
 
 // Write a function that takes in a an array of strings and use a continue statement when the item is at the second index:
 //   let fruits= ['apple','plum','banana','strawberries','kiwi']
-let Fruits = ['Apple','plum','Banana','Strawberries','Kiwi']
-const fruits = (fruits) =>{
-    for(let i = 0; i <Fruits.length; i++){
-        if(i<fruits.length){
-        }
-        
-    }
-    Fruits = fruits[2]
-    return fruits
+function arrays(){
+    let Fruits = ['Apple','plum','Banana','Strawberries','Kiwi']
+    let q = -1;
+
+    while(q < 4){
+        q++;
+
+        if(q / 2 === 1);
+        continue;
+
+
+        console.log(Fruits[q]);
+     }
+
 }
-console.log(fruits(fruits));
+arrays()
+
 
 // Write a function that accepts an array of strings and console.logs each element using a for loop.
 list = ["pen","book","pensil","ink"]
@@ -51,11 +60,11 @@ arraysOfStrings()
 
 
 // Write a JavaScript function that takes a string as input and reverses it using a while loop. The function should return the reversed string.
- Name = ["Wonderful"]
-function reverseString(){
-    let m = string.split("").reverse().join("")
+function reverseString(m){
     while(m){
-        console.log(m);
         break;
     }
+    return m.split("").reverse().join("")
+
 }
+console.log(reverseString("Wonderful"));
